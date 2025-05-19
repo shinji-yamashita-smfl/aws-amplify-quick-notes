@@ -102,8 +102,8 @@ export default props => {
         <Icon onClick={() => setShowEditor(true)}>
           <FaRegEdit />
         </Icon>
-        <Icon>
-          <FaRegTrashAlt onClick={props.onDelete} />
+        <Icon onClick={props.onDelete}>
+          <FaRegTrashAlt />
         </Icon>
       </NoteActions>
 

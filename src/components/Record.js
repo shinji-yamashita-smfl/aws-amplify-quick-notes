@@ -39,7 +39,8 @@ export default props => {
   const [isRecording, setIsRecording] = useState(false);
   const [showRecordingEditor, setShowRecordingEditor] = useState(false);
   const [recordingText, setRecordingText] = useState("");
-  const [isConverting, setIsConverting] = useState("");
+  // track whether the recording is being converted to text
+  const [isConverting, setIsConverting] = useState(false);
   const [micStream, setMicStream] = useState();
   const [audioBuffer] = useState(
     (function() {

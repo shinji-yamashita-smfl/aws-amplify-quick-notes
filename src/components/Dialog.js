@@ -23,7 +23,7 @@ const StyledDialogContent = styled(DialogContent)`
 `;
 
 export default props => (
-  <Dialog>
+  <Dialog onDismiss={props.onDismiss}>
     <StyledDialogOverlay>
       <StyledDialogContent>{props.children}</StyledDialogContent>
     </StyledDialogOverlay>

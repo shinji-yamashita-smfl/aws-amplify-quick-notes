@@ -103,6 +103,7 @@ export default props => (
 
           <Actions>
             <StyledButton
+              type="button"
               onClick={() => {
                 props.onDismiss();
               }}
